@@ -2,8 +2,9 @@ import React from 'react'
 
 function BFT() {
   return (
-    <div className='w-full bg-BFT bg-no-repeat bg-cover '>
-        <div className="flex flex-col items-center justify-center p-20 w-full ">
+    <div className='w-full bg-BFT bg-no-repeat bg-fit bg-center bg-bgfourm '>
+      <div className=" backdrop-brightness-60">
+        <div className="flex flex-col items-center justify-center p-20 w-full  backdrop-blur-[1px]">
             <div className="text-white text-6xl mt-40 ">
                 <h2>|Join the forum|</h2>
             </div>
@@ -14,6 +15,8 @@ function BFT() {
                     Join Now
                 </button>
         </div>
+      </div>
+        
     </div>
   )
 }
