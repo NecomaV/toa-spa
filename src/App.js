@@ -1,22 +1,17 @@
-import BFT from './comps/BFT';
-import Char from './comps/Char';
-import Footer from './comps/Footer';
-import Hero from './comps/Hero';
-import LongComp from './comps/LongComp';
-import NavBar from './comps/NavBar'; 
-import Sg from './comps/Sg';
+
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Pagerender  from './Pagerender';
+import Main from './pages/Main';
+
 
 function App() {
   return (
-    <div className=" bg-main w-full">
-       <NavBar />
-       <Hero />
-       <LongComp />
-       <Sg />
-       <Char />
-       <BFT />
-       <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Main />} />
+        <Route exact path="/:page" element={<Pagerender />} />
+      </Routes>
+    </Router>
   );
 }
 

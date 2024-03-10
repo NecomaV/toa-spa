@@ -34,9 +34,12 @@ function NavBar() {
                 <a href="https://flowbite.com/" className="flex items-center justify-center w-100 space-x-3 rtl:space-x-reverse">
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Tales of Arslan</span>
                 </a>
-                <div className="w-100 flex justify-center items-center ">
+                <div className="w-100 flex justify-center items-center gap-4">
                     <button className="bg-indigo-900 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
                         Download Now
+                    </button>
+                    <button className="bg-indigo-900 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
+                        Register Now
                     </button>
                 </div>
                 
