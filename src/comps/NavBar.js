@@ -3,6 +3,7 @@ import product from '../img/diamond.png'
 import dlc from '../img/dlcicon.png'
 import blog from '../img/blogicon.png'
 import forum from '../img/forumicon.png'
+import { Link } from 'react-router-dom'
 
 
 function NavBar() {
@@ -39,7 +40,7 @@ function NavBar() {
                         Download Now
                     </button>
                     <button className="bg-indigo-900 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
-                        Register Now
+                        <Link to="/Login">Login</Link>
                     </button>
                 </div>
                 
